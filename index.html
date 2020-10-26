@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <title>Muthers Studio - Home</title>
   </head>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="LogoBlack.png" width="30" height="30" alt="" loading="lazy"></a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><img src="LogoBlack.png" width="30" height="30" alt="" loading="lazy"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,39 +55,41 @@
     </div>
 
     <div id="topCarousel" class="container-fluid m-0 p-0">
-      <div class="maskImage">
+      <div class="maskImage imgDisolve">
         <img src="LogoEstBigBlack.png">
       </div>
 
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div id="indexCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/89172089_10158147734927171_6693974906142457856_o.jpg?_nc_cat=100&_nc_sid=730e14&_nc_ohc=zZWMPXzx4jAAX9sZwEf&_nc_ht=scontent-lht6-1.xx&oh=f43fc6c29735558f106abbf88e9ff4b4&oe=5F80F7D0" class="d-block w-100" alt="...">
+              <div class="carousel-item active imgDisolve">
+                  <img src="images/building.jpg" class="d-block w-100" alt="Muthers Studio">
               </div>
-              <div class="carousel-item">
-                <img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/43346111_10156823943507171_797524213677162496_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=D05VUvztLEMAX8L9V1i&_nc_ht=scontent-lhr8-1.xx&oh=83b9a92bf7ef8a49daf95a50276be4f5&oe=5F837B0B" class="d-block w-100" alt="...">
+              <div class="carousel-item imgDisolve">
+                <img src="images/pool.jpg" class="d-block w-100" alt="Rehearsal Room">
               </div>
-              <div class="carousel-item">
-                <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/89436490_10158163190032171_6997235000655478784_o.jpg?_nc_cat=106&_nc_sid=730e14&_nc_ohc=y92MsERSdNQAX--Nl3V&_nc_ht=scontent-lht6-1.xx&oh=9284c2e6e2c1379d06291996d2cc889b&oe=5F7FAAA4" class="d-block w-100" alt="...">
+              <div class="carousel-item imgDisolve">
+                <img src="images/reception.jpg" class="d-block w-100" alt="Reception">
+              </div>
+              <div class="carousel-item imgDisolve">
+                <img src="images/Venue&Screen.jpg" class="d-block w-100" alt="Venue">
               </div>
             </div>
           </div>
     </div>
             
     <div class="container">
-      <h2 class="text-light text-center oswald">More Than A Rehearsal Studio</h2>
-      <!-- <hr class="my-4 border-white"> -->
+      <h2 class="text-light text-center oswald">People, Music, Create, Community.</h2>
 
       <p  class="d-flex justify-content-center">
         <a class="btn btn-outline-light" data-toggle="collapse" href="#bio" role="button" aria-expanded="false" aria-controls="collapseExample">
           About us...
-        </a>
-      </p>
+        </a> 
+       </p>
       <div class="collapse" id="bio">
         <div class="card card-body">
           <div class="row">
             <div class="col-sm align-middle">
-              <p class="oswald">Based in Digbeth, the cultral beating heart of Birmingham. Muthers studio is on of the most highly respected arts complexes in the Midlands.</p>
+              <p class="oswald">Based in Digbeth, the cultral beating heart of Birmingham. Muthers studio is one of the most highly respected arts complexes in the Midlands.</p>
               <p class="oswald">Boasting rehearsal spaces for all levels of proffesionalities, its very own recording studio, over 30 lock-ups, a live music venue and two bars offering alcoholic and barrista refreshments and small music essentials shop for sticks, strings, picks, leads etc. </p>
             </div>
 
@@ -98,8 +100,54 @@
           </div>
         </div>
       </div>
+    </div>
 
-
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card-body">
+            <img class="card-img-top" src="images/Rm1.jpg" alt="Room 1" style="width:100%">
+            <div class="card-img-overlay">
+              <h2 class="card-title oswald text-light">Rehearsal</h2>
+              <p class="card-text text-light">Rooms available to rent by the hour, well equipped and well maintained to keep your experience as seamless as possible.
+              </p>
+              <a href="rehearsal.html" class="btn btn-info">See More ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card-body">
+            <img class="card-img-top" src="images/desk.jpg" alt="Mixing desk" style="width:100%">
+            <div class="card-img-overlay">
+              <h2 class="card-title oswald text-light">Recording</h2>
+              <p class="card-text text-light">DMC recording based right here in Muthers Studio, with years of experience and an extensive client list from GBH to Universal, find out more and get in touch.</p>
+              <a href="recording.html" class="btn btn-info">See More ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="card-body">
+            <img class="card-img-top" src="images/venue2.jpg" alt="Venue" style="width:100%">
+            <div class="card-img-overlay">
+              <h2 class="card-title oswald text-light">Events</h2>
+              <p class="card-text text-light">A fully licensed 120 cap venue, with two bars, kitchen and barrista refreshments. Hosting touring giants and up & coming locals</p>
+              <a href="events.html" class="btn btn-info">See More ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card-body">
+            <img class="card-img-top" src="images/Lockup.jpg" alt="Lockup" style="width:100%">
+            <div class="card-img-overlay">
+              <h2 class="card-title oswald text-light">Lock-Ups</h2>
+              <p class="card-text text-light">Over 30 long-term private reherasal rooms, often a waiting list but pass on your details if you're interested</p>
+              <a href="lockups.html" class="btn btn-info">See More ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->

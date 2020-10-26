@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <title>Muthers Studio - Rehearsal</title>
   </head>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="LogoBlack.png" width="30" height="30" alt="" loading="lazy"></a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><img src="LogoBlack.png" width="30" height="30" alt="" loading="lazy"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -52,7 +52,26 @@
 
     <div class="container-fluid">
       <h1 class="text-white oswald">REHEARSAL</h1>
-      <p class="text-light oswald">Each room comes fully kitted out with well maintained, high-quality PA, amps and drum kit so you can just turn up and play. Microphones, cymbals, keyboards and leads are available upon request at reception completely free of charge and guitar hire is available for a small fee. Our standard rooms (1-3) are fully suitable and equiped for 5/6 piece bands, solo artists or anything inbetween.<br /> If you are a larger group, our 120 cap venue is available to rehearse in, wether you need the space or just looking to get gig-ready, or we have our 'small stage' in room 5.</p>
+    </div>
+
+    <div id="topCarousel" class="container-fluid m-0 p-0">
+      <div class="maskImage imgDisolve">
+        <img src="LogoEstBigBlack.png">
+      </div>
+      <div id="indexCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active imgDisolve">
+              <div class="container-fluid m-0 p-0">
+                <img class="img-fluid imgDisolve d-block w-100" src="images/Rm1.jpg">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="oswald text-light">Fully kitted out rehearsal rooms ready to go</h2>
+      <p class="text-light oswald">Each room is clean, modern and well maintained. They all have high-quality PA, amps, drum kit with breakables so you can just turn up and play, all you need to bring is guitars and sticks. Microphones, cymbals, keyboards and leads are available upon request at reception completely free of charge and guitar hire is available for a small fee. Our standard rooms (1-3) are fully suitable and equipped for 5/6 piece bands, solo artists or anything inbetween.<br /> If you are a larger group, our 120 cap venue is available to rehearse in, wether you need the space or just looking to get gig-ready. Or we also have room 5, our 'small stage', our second premium room that suits needs perfectly between that of a full venue and a standard room.</p>
       <a class="btn btn-outline-light" data-toggle="collapse" href="#rates" role="button" aria-expanded="false" aria-controls="collapseExample">
         Prices
       </a>
@@ -63,21 +82,24 @@
         <div class="row">
           <div class="col-sm align-middle">
             <h3 class="oswald">Hourly Rehearsal Room Rates</h3>
-            <p><strong>Rooms 1-3:</strong></p>
-            <p>Offpeak (Mon-Fri 12pm-6pm): £8 per hour</p>
-            <p>Peak (Sat, Sun, Mon-Fri after 6pm): £10 per hour</p>
-            <p><Strong>Venue:</Strong></p>
-            <p>All times: £15 per hour. If you require a soundengineer or use of the full venue PA please get in touch to discuss</p>
-            <p><Strong>Room 5:</Strong></p>
-            <p>Offpeak (Mon-Fri 12pm-6pm): £10 per hour</p>
-            <p>Peak (Sat, Sun, Mon-Fri after 6pm): £12 per hour</p>
+            <p><strong>Offpeak</strong> (Monday to Friday 12pm till 6pm)</p>
+            <p>Rooms 1-3: £8 per hour</p>
+            <p>Venue: £15 per hour*</p>
+            <p>Room 5: £10 per hour</p>
+            <p><Strong>Peak Times</Strong> (After 6pm in the week, Saturday and Sunday all day)</p>
+            <p>Rooms 1-3: £10 per hour</p>
+            <p>Venue: £15 per hour*</p>
+            <p>Room 5: £12 per hour</p>
+            <p><strong>Guitar Hire</strong> £5</p>
             <a href="contact.html">Contact Us To Book</a>
+            <p><i>*If you require the full venue sound and/or light systems, an engineer or any further requirements please get in touch as prices will differ</i></p>
           </div>
 
         </div>
       </div>
     </div>
 
+    <div class="accordion" id="roomAccordian">
       <div class="card card-body">
         
         <div class="row">
@@ -88,11 +110,11 @@
         <div class="row">
           <div class="col-sm align-middle">
             <h2 class="oswald">Room 1</h2>
-            <a data-toggle="collapse" href="#room1" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/89172089_10158147734927171_6693974906142457856_o.jpg?_nc_cat=100&_nc_sid=730e14&_nc_ohc=u57ZpFiw8lkAX9sAc2c&_nc_ht=scontent-lht6-1.xx&oh=5b946556f8533baf72d8c7f41150c2c3&oe=5F84EC50" class="img-thumbnail">
+            <a data-toggle="collapse" href="#room1" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/Room 1.jpg" class="img-thumbnail">
             </a>
           </div>
 
-          <div class="collapse" id="room1">
+          <div class="collapse" id="room1" data-parent="#roomAccordian">
             <div class="row">
             <div class="card card-body">
               <div class="row">
@@ -102,11 +124,20 @@
                   <p>Offpeak (Mon-Fri 12pm-6pm): £8 per hour</p>
                   <p>Peak (Sat, Sun, Mon-Fri after 6pm): £10 per hour</p>
                   <p><Strong>Equipment:</Strong></p>
-                  <p>2 x Orange Guitar Heads & Laney Cabs</p>
-                  <p>Bass Amp</p>
-                  <p>Drum Kit</p>
+                  <p><u>Guitar</u></p>
+                  <p>2 x Orange Crush Pro 120 Heads</p>
+                  <p>2 x Laney 4x12 speaker cabinets</p>
+                  <p><u>Bass</u></p>
+                  <p>Crown XLi 800 Sansamp</p>
+                  <p>1x15 & 2x10 speaker cabinets</p>
+                  <p><u>Drums</u> (All breakables included, cymbals and felts available at reception)</p>
+                  <p>5 Piece Pearl Export (inc. snare)</p>
+                  <p>Iron Cobra Kick Pedal</p>
+                  <p>HH stand & 3 x Cymbal stands (more available upon request)</p>
+                  <p><u>Vocal</u></p>
                   <p>4 x Mic Stands</p>
-                  <p>PA</p>
+                  <p>Yamaha emx 5014c 14 channel powered mixer</p>
+    
                   <p><em>Microphones, cymbals, keyboards and leads are available upon request at reception completely free of charge and guitar hire is available for a small fee.</em></p>
                   <p><a href="contact.html">Contact Us To Book</a></p>
                 </div>
@@ -116,11 +147,12 @@
           </div>
 
           <div class="col-sm align-middle">
-             <h2 class="oswald">Room 2</h2>
-             <a data-toggle="collapse" href="#room2" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/43346111_10156823943507171_797524213677162496_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=mmhFA-z5ADUAX-KecIW&_nc_ht=scontent-lhr8-1.xx&oh=df21b5fb8de634c90f2afb9772616318&oe=5F876F8B" class="img-thumbnail"></a>
+            <h2 class="oswald">Room 2</h2>
+            <a data-toggle="collapse" href="#room2" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/Room 2.jpg" class="img-thumbnail">
+            </a>
           </div>
 
-          <div class="collapse" id="room2">
+          <div class="collapse" id="room2" data-parent="#roomAccordian">
             <div class="row">
             <div class="card card-body">
               <div class="row">
@@ -130,13 +162,19 @@
                   <p>Offpeak (Mon-Fri 12pm-6pm): £8 per hour</p>
                   <p>Peak (Sat, Sun, Mon-Fri after 6pm): £10 per hour</p>
                   <p><Strong>Equipment:</Strong></p>
-                  <p>2 x Marshall Stacks</p>
-                  <p>Bass Amp</p>
-                  <p>Drum Kit</p>
+                  <p><u>Guitar</u></p>
+                  <p>2 x Orange CR120 Heads</p>
+                  <p>2 x Marshall 4x12 speaker cabinets</p>
+                  <p><u>Bass</u></p>
+                  <p>Crown XLi 800 Sansamp</p>
+                  <p>bespoke 2x10 speaker cabinet</p>
+                  <p><u>Drums</u> (All breakables included, cymbals and felts available at reception)</p>
+                  <p>5 Piece Pearl Export (inc. snare)</p>
+                  <p>Iron Cobra Kick Pedal</p>
+                  <p>HH stand & 3 x Cymbal stands (more available upon request)</p>
+                  <p><u>Vocal</u></p>
                   <p>4 x Mic Stands</p>
-                  <p>PA</p>
-                  <p><em>Microphones, cymbals, keyboards and leads are available upon request at reception completely free of charge and guitar hire is available for a small fee.</em></p>
-                  <p><a href="contact.html">Contact Us To Book</a></p>
+                  <p>Mackie PPM608 powered mix</p>
                 </div>
               </div>
             </div>
@@ -145,10 +183,10 @@
 
           <div class="col-sm align-middle">
             <h2 class="oswald">Room 3</h2>
-            <a data-toggle="collapse" href="#room3" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/40790518_10156745344727171_3022034466588590080_o.jpg?_nc_cat=108&_nc_sid=730e14&_nc_ohc=FKQdqhVSfVcAX9wgPHf&_nc_ht=scontent-lht6-1.xx&oh=14acfc1c452c0da8a691f0f465126ce7&oe=5F880636" class="img-thumbnail"></a>
+            <a data-toggle="collapse" href="#room3" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/Room 3.jpg" class="img-thumbnail"></a>
           </div>
 
-          <div class="collapse" id="room3">
+          <div class="collapse" id="room3" data-parent="#roomAccordian">
             <div class="row">
             <div class="card card-body">
               <div class="row">
@@ -158,11 +196,19 @@
                   <p>Offpeak (Mon-Fri 12pm-6pm): £8 per hour</p>
                   <p>Peak (Sat, Sun, Mon-Fri after 6pm): £10 per hour</p>
                   <p><Strong>Equipment:</Strong></p>
-                  <p>2 x Orange guitar heads & Marshall cabs</p>
-                  <p>Bass Amp</p>
-                  <p>Drum Kit</p>
+                  <p><u>Guitar</u></p>
+                  <p>2 x Orange CR120 Heads</p>
+                  <p>2 x Marshall 4x12 speaker cabinets</p>
+                  <p><u>Bass</u></p>
+                  <p>Crown XLi 800 Sansamp</p>
+                  <p>1x15 & 2x10 speaker cabinets</p>
+                  <p><u>Drums</u> (All breakables included, cymbals and felts available at reception)</p>
+                  <p>5 Piece Pearl Export (inc. snare)</p>
+                  <p>Iron Cobra Kick Pedal</p>
+                  <p>HH stand & 3 x Cymbal stands (more available upon request)</p>
+                  <p><u>Vocal</u></p>
                   <p>4 x Mic Stands</p>
-                  <p>PA</p>
+                  <p>Mackie PPM608 powered mixer</p>
                   <p><em>Microphones, cymbals, keyboards and leads are available upon request at reception completely free of charge and guitar hire is available for a small fee.</em></p>
                   <p><a href="contact.html">Contact Us To Book</a></p>
                 </div>
@@ -180,10 +226,10 @@
 
           <div class="col-sm align-middle">
             <h2 class="oswald">Venue</h2>
-            <a data-toggle="collapse" href="#venue" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/40760697_10156745345472171_3071171928996708352_o.jpg?_nc_cat=104&_nc_sid=730e14&_nc_ohc=l_HSleW3S_AAX_6vOB5&_nc_ht=scontent-lhr8-1.xx&oh=754823a7f99ad65461db87d08a7088f6&oe=5F876CD2" class="img-thumbnail"></a>
+            <a data-toggle="collapse" href="#venue" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/Venue.jpg" class="img-thumbnail"></a>
           </div>
 
-          <div class="collapse" id="venue">
+          <div class="collapse" id="venue" data-parent="#roomAccordian">
             <div class="row">
             <div class="card card-body">
               <div class="row">
@@ -193,11 +239,19 @@
                   <p>£15 per hour</p>
                   <p>If soundengineer, full venue PA, lighting or space for video shoot are required please get in touch to discuss</p>
                   <p><Strong>Equipment:</Strong></p>
-                  <p>2 x Orange guitar heads & custom cabs</p>
-                  <p>Bass Amp</p>
-                  <p>Drum Kit</p>
+                  <p><u>Guitar</u></p>
+                  <p>2 x Orange TH30 30W Valve Amps</p>
+                  <p>2 x bespoke 4x12 speaker cabinets</p>
+                  <p><u>Bass</u></p>
+                  <p>Nova x1200 power amp</p>
+                  <p>Ampeg SVT810 speaker cabinet</p>
+                  <p><u>Drums</u> (All breakables included, cymbals and felts available at reception)</p>
+                  <p>5 Piece Pearl Export (inc. snare)</p>
+                  <p>Iron Cobra Kick Pedal</p>
+                  <p>HH stand & 3 x Cymbal stands (more available upon request)</p>
+                  <p><u>Vocal</u></p>
                   <p>4 x Mic Stands</p>
-                  <p>PA</p>
+                  <p>Mackie Cfx 20 MKII 20 channel mixer</p>
                   <p><em>Microphones, cymbals, keyboards and leads are available upon request at reception completely free of charge and guitar hire is available for a small fee.</em></p>
                   <p><a href="contact.html">Contact Us To Book</a></p>
                 </div>
@@ -208,10 +262,10 @@
 
           <div class="col-sm align-middle">
             <h2 class="oswald">Room 5</h2>
-            <a data-toggle="collapse" href="#room5" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/89436490_10158163190032171_6997235000655478784_o.jpg?_nc_cat=106&_nc_sid=730e14&_nc_ohc=W85JGbCQdN0AX-xzVqV&_nc_ht=scontent-lht6-1.xx&oh=25fcbb4971c4f5df316814204df3c919&oe=5F8793A4" class="img-thumbnail"></a>
+            <a data-toggle="collapse" href="#room5" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/Room 5.jpg" class="img-thumbnail"></a>
           </div>
 
-          <div class="collapse" id="room5">
+          <div class="collapse" id="room5" data-parent="#roomAccordian">
             <div class="row">
             <div class="card card-body">
               <div class="row">
@@ -221,11 +275,20 @@
                   <p>Offpeak (Mon-Fri 12pm-6pm): £10 per hour</p>
                   <p>Peak (Sat, Sun, Mon-Fri after 6pm): £12 per hour</p>
                   <p><Strong>Equipment:</Strong></p>
-                  <p>2 x Orange Guitar Heads & custom Cabs</p>
-                  <p>Bass Amp</p>
-                  <p>Drum Kit</p>
+                  <p><u>Guitar</u></p>
+                  <p>2 x Orange TH30 30W Valve Amps</p>
+                  <p>2 x bespoke 4x12 speaker cabinets</p>
+                  <p><u>Bass</u></p>
+                  <p>Crown XLi 800 Sansamp</p>
+                  <p>bespoke 2x10 speaker cabinet</p>
+                  <p><u>Drums</u> (All breakables included, cymbals and felts available at reception)</p>
+                  <p>Pearl Export Shells</p>
+                  <p>Tama Snare</p>
+                  <p>Iron Cobra Kick Pedal</p>
+                  <p>HH stand & 3 x Cymbal stands (more available upon request)</p>
+                  <p><u>Vocal</u></p>
                   <p>4 x Mic Stands</p>
-                  <p>PA</p>
+                  <p>Mackie Cfx 20 MKII 20 channel mixer</p>
                   <p><em>Microphones, cymbals, keyboards and leads are available upon request at reception completely free of charge and guitar hire is available for a small fee.</em></p>
                   <p><a href="contact.html">Contact Us To Book</a></p>
                 </div>
@@ -240,6 +303,7 @@
 
       </div>
     </div>
+  </div>
 
   </body>
   <!-- Optional JavaScript -->
