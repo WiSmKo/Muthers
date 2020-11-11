@@ -20,92 +20,57 @@
     <meta name="theme-color" content="#ffffff">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- components -->
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <title>Muthers Studio - Home</title>
   </head>
 
-  <!-- Main navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html"><img src="LogoBlack.png" width="30" height="30" alt="Muthers Logo" loading="lazy"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="rehearsal.html">Open Hours & Prices</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="recording.html">Recording</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="events.html">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="lockups.html">Lock-Ups</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="store.html">Store</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
   <body>
+      <header>
+        <header-component></header-component>
+        <div class="container-fluid">
+          <h1 class="text-white oswald">MUTHERS STUDIO</h1>
+        </div>
 
-    <div class="container-fluid">
-      <h1 class="text-white oswald">MUTHERS STUDIO</h1>
-    </div>
-
-        <header>
-          <!-- Landing Photo carousel for mobile-->
-          <span class="mobileCarousel">
-            <div id="topCarousel" class="container-fluid m-0 p-0">
-              <div class="maskImage imgDisolve">
-                <!-- <img src="LogoEstBigBlack.png" alt="Muthers Logo semi-transparent overlay"> -->
-              </div>
-        
-                <div id="indexCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active imgDisolve">
-                        <img src="images/building.jpg" class="d-block w-100" alt="Muthers Studio">
-                    </div>
-                    <div class="carousel-item imgDisolve">
-                      <img src="images/pool.jpg" class="d-block w-100" alt="Rehearsal Room">
-                    </div>
-                    <div class="carousel-item imgDisolve">
-                      <img src="images/reception.jpg" class="d-block w-100" alt="Reception">
-                    </div>
-                    <div class="carousel-item imgDisolve">
-                      <img src="images/Venue&Screen.jpg" class="d-block w-100" alt="Venue">
-                    </div>
-                  </div>
+        <!-- Landing Photo carousel for mobile-->
+        <span class="mobileCarousel">
+          <div id="topCarousel" class="container-fluid m-0 p-0">
+            <div id="indexCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active imgDisolve">
+                    <img src="images/building.jpg" class="d-block w-100" alt="Muthers Studio">
+                </div>
+                <div class="carousel-item imgDisolve">
+                  <img src="images/pool.jpg" class="d-block w-100" alt="Rehearsal Room">
+                </div>
+                <div class="carousel-item imgDisolve">
+                  <img src="images/reception.jpg" class="d-block w-100" alt="Reception">
+                </div>
+                <div class="carousel-item imgDisolve">
+                  <img src="images/Venue&Screen.jpg" class="d-block w-100" alt="Venue">
                 </div>
               </div>
             </div>
-          </span>
+          </div>
+        </span>
 
-          <!-- Landing video for desktop-->
-          <span class="fullSizeVideo">
-            <div class="overlay"></div>
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source src="video/Mvioptmzd.m4v" type="video/mp4">
-            </video>
-            <div class="container h-100">
-              <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white">
-                </div>
+        <!-- Landing video for desktop-->
+        <span class="fullSizeVideo">
+          <div class="overlay"></div>
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/Mvioptmzd.m4v" type="video/mp4">
+          </video>
+          <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+              <div class="w-100 text-white">
               </div>
             </div>
-          </span>
+          </div>
+        </span>
+      </header>
 
-        </header>
-            
+    <main>
     <div class="container">
       <h2 class="text-light text-center playfair-italic">One stop shop for creation, refinement, community and realisation.</h2>
 
@@ -132,124 +97,53 @@
       </div>
     </div>
 
-    <span class="bigButtons">
-      <div class="container">
+      <div class="container" id="bigButtons">
         <div class="row">
           <div class="col-sm">
-            <a href="rehearsal.html" class="btn btn-lg btn-outline-light text-uppercase indexButtons">
+            <a href="rehearsal.html" class="btn btn-lg btn-outline-light">
               <img class="card-img-top overlay" src="images/Room 1.jpg" alt="Muthers studio rehearsal room">
               <div class="card-img-overlay">
-                <p class="text-center font-weight-bold">Rehearsals</p>
+                <p class="text-center font-weight-bold">REHEARSALS</p>
               </div>
             </a>
           </div>
 
           <div class="col-sm">
-            <a href="recording.html" class="btn btn-lg btn-outline-light text-uppercase indexButtons">
+            <a href="recording.html" class="btn btn-lg btn-outline-light">
               <img class="card-img-top overlay" src="images/desk.jpg" alt="Muthers studio mixing desk">
               <div class="card-img-overlay">
-                <p class="text-center font-weight-bold">Recording</p>
+                <p class="text-center font-weight-bold">RECORDING</p>
               </div>
             </a>
           </div>
         </div>
 
         <div class="row">
-          <div class="col">
-           <p></p>
-          </div>
-        </div>
-
-        <div class="row">
           <div class="col-sm">
-            <a href="events.html" class="btn btn-lg btn-outline-light text-uppercase indexButtons">
+            <a href="events.html" class="btn btn-lg btn-outline-light">
               <img class="card-img-top overlay" src="images/venue2.jpg" alt="Muthers Studio venue">
               <div class="card-img-overlay">
-                <p class="text-center font-weight-bold">Events</p>
+                <p class="text-center font-weight-bold">EVENTS</p>
               </div>
             </a>
           </div>
 
           <div class="col-sm">
-            <a href="lockups.html" class="btn btn-lg btn-outline-light text-uppercase indexButtons">
-              <img class="card-img-top overlay" src="images/Lockup.jpg" alt="Muthers Studio Lockup">
+            <a href="lockups.html" class="btn btn-lg btn-outline-light">
+              <div class="overlay">
+                <img class="card-img-top" src="images/Lockup.jpg" alt="Muthers Studio Lockup">
+              </div>
               <div class="card-img-overlay">
-                <p class="text-center font-weight-bold">Lock-Ups</p>
+                <p class="text-center font-weight-bold">LOCK-UPS</p>
               </div>
             </a>
           </div>
         </div>
-
-        </div>
-      </div>
-    </span>
-
-    <footer class="bg-dark text-white-50 pt-5">
-      <div class = "container-fluid">
-        <div class="row">
-          <div class="col">
-
-            <p class="font-weight-bold oswald">Information</p>
-            <ul class="list-unstyled">
-              <li><a href="rehearsal.html">Rehearsal</a></li>
-              <li><a href="recording.html">Recording</a></li>
-              <li><a href="lockups.html">Lock-Ups</a></li>
-              <li><a href="events">Events</a></li>
-            </ul>
-          </div>
-
-          <div class="col">
-            <p class="font-weight-bold oswald">Talk To Us</p>
-            <ul class="list-unstyled">
-              <li><a href="contact.html">Contact Page</a></li>
-              <li>0121 622 7110</li>
-              <li>14 Rea Street South Digbeth Birmingham B5 6LB</li>
-              <li>Find us on <a href="https://goo.gl/maps/CSzHSv2C4reGtK1C9">Google Maps</a></li>
-            </ul>
-          </div>
-
-          <div class="col">
-            <p class="font-weight-bold oswald">Keep Posted</p>
-            Sign up to our monthly news letter to stay informed on our latest news and events:
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="email" placeholder="Email address" aria-label="Email">
-              <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Sign Up</button>
-            </form>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-8">
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">&#128269;</button>
-            </form>
-          </div>
-          <div class="col">
-            <p class="font-weight-bold oswald">About Us</p>
-            <p>Creative hub in digbeth, Birmingham providing; music rehearsal spaces; recording, mixing, mastering; and live performance space</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <p class="text-center m-0">Site built by <a href="#">William Smallman-Köpf</a></p>
-            <p class="text-center m-0">Photo & Video - <a href="https://www.thomasallanwagstaff.com/">Thomas Wagstaff</a></p>
-            <p class="text-center m-0">Copyright &#169; 2020. Muthers Ltd. All rights reserved</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <a href="contact.html">Contact us</a> - <a href="#">Privacy Policy</a> - <a href="#">Terms of Use</a> - <a href="#">Sitemap</a>
-          </div>
-          <div class="col-1">
-            <p class="text-right">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/"><i class="fab fa-youtube"></i></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </div>  
+    </main>
+    
+    <!-- footer -->
+    <footer-component></footer-component>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -4,6 +4,7 @@ body{
     padding-top: 65px;
 }
 
+/* hide video on mobile */
 .fullSizeVideo{
     display: none;
 }
@@ -12,27 +13,13 @@ body{
     position: relative;   
 }
 
-.maskImage{
-    position: absolute;
-    width: 100%;
-    z-index: 9;
-}
-
-#callToAction{
-    position: absolute;
-    z-index: 10;
-    width: 50%;
-}
-
-.maskImage img{
-    width: 100%;
-    opacity: 0.3;
-}
-
+/* disolve effect gradient on carousel images */
 .imgDisolve{
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
+
+/* fonts */
 
 .playfair-italic{
     font-family: 'Playfair Display', serif;
@@ -47,57 +34,37 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
-.number{
-    font-size: 2rem;
+/* styling of the four buttons in the middle of the home page */
+#bigButtons .col{
+    padding-bottom: 5%;
 }
 
-/* semi transparent mask over corousel */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    /* z-index: 1; */
-  }
-
-
-/* styling of the four buttons in the middle of the home page */
-.indexButtons{
-    width: 100%;
-    height: 300px;
+#bigButtons p{
     font-size: 10vw;
-    padding: 2%;
     text-align: center;
 }
 
-.indexButtons{
-    width: 100%;
-}
-
-.indexButtons img{
-    padding: 6%;
-    background-color: inherit;
+#bigButtons img{
+    filter: brightness(50%);
 }
 
 .boxed{
     border-bottom: 1px solid black;
   }
 
+/* desktop and mobile query */
 @media (min-width: 576px){
 
     header {
         position: relative;
         background-color: black;
-        height: 75vh;
+        height: 50vh;
         min-height: 25rem;
         width: 100%;
         overflow: hidden;
       }
       
-      header video {
+    header video {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -110,38 +77,25 @@ body{
         -moz-transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
-      }
-      
-      header .container {
-        position: relative;
-        z-index: 2;
-      }
+    }
 
-      .fullSizeVideo {
+    .fullSizeVideo {
         display: inline-block;
-      }
-
-      .mobileCarousel{
-          display: none;
-      }
-
-
-    .carousel .carousel-item{
-        height: 400px;
-    }
-    
-    .carousel-item img {
-        position: absolute;
-        top: -50%;
-        left: 0;
     }
 
-    .maskImage {
-        height: 400px;
+    /* hide image carousel on desktop view */
+    .mobileCarousel{
+        display: none;
     }
 
-    .indexButtons{
+    /* adjust the font size of home screen buttons to improve responsiveness */
+    #bigButtons p{
         font-size: 5vw;
+    }
+
+    /* adjust alignment of link list depending on screen size */
+    #footerLinks{
+        text-align: left;
     }
 
 }
