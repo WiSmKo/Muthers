@@ -4,13 +4,8 @@ body{
     padding-top: 65px;
 }
 
-/* hide video on mobile */
-.fullSizeVideo{
-    display: none;
-}
-
-#topCarousel{
-    position: relative;   
+body h1, h2, h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
 }
 
 /* disolve effect gradient on carousel images */
@@ -18,6 +13,13 @@ body{
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
+
+/* creates lines to sepearate content in tables (see open times and prices) */
+.boxed{
+    border-bottom: 1px solid black;
+  }
+
+
 
 /* fonts */
 
@@ -34,10 +36,9 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
+
 /* styling of the four buttons in the middle of the home page */
-#bigButtons .col{
-    padding-bottom: 5%;
-}
+
 
 #bigButtons p{
     font-size: 10vw;
@@ -48,13 +49,10 @@ body{
     filter: brightness(50%);
 }
 
-.boxed{
-    border-bottom: 1px solid black;
-  }
 
-/* desktop and mobile query */
+/* desktop and tablet styling */
 @media (min-width: 576px){
-
+    /* header style */
     header {
         position: relative;
         background-color: black;
@@ -77,15 +75,6 @@ body{
         -moz-transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
-    }
-
-    .fullSizeVideo {
-        display: inline-block;
-    }
-
-    /* hide image carousel on desktop view */
-    .mobileCarousel{
-        display: none;
     }
 
     /* adjust the font size of home screen buttons to improve responsiveness */

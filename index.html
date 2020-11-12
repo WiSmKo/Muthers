@@ -35,7 +35,7 @@
 
         <!-- Landing Photo carousel for mobile-->
         <span class="mobileCarousel">
-          <div id="topCarousel" class="container-fluid m-0 p-0">
+          <div id="topCarousel" class="container-fluid m-0 p-0 d-lg-none">
             <div id="indexCarousel" class="carousel slide carousel-fade" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active imgDisolve">
@@ -56,22 +56,16 @@
         </span>
 
         <!-- Landing video for desktop-->
-        <span class="fullSizeVideo">
-          <div class="overlay"></div>
-          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <div class="d-inline-block">
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="d-none d-lg-block">
             <source src="video/Mvioptmzd.m4v" type="video/mp4">
           </video>
-          <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-              <div class="w-100 text-white">
-              </div>
-            </div>
-          </div>
-        </span>
+        </div>
+
       </header>
 
     <main>
-    <div class="container">
+      <div class="container pt-lg-5 pb-5">
       <h2 class="text-light text-center playfair-italic">One stop shop for creation, refinement, community and realisation.</h2>
 
       <!-- collapsable about section -->
@@ -97,9 +91,9 @@
       </div>
     </div>
 
-      <div class="container" id="bigButtons">
-        <div class="row">
-          <div class="col-sm">
+      <div class="container-fluid" id="bigButtons">
+        <div class="row pb-md-5 mx-md-5">
+          <div class="col-sm pb-5 mx-md-5">
             <a href="rehearsal.html" class="btn btn-lg btn-outline-light">
               <img class="card-img-top overlay" src="images/Room 1.jpg" alt="Muthers studio rehearsal room">
               <div class="card-img-overlay">
@@ -108,7 +102,7 @@
             </a>
           </div>
 
-          <div class="col-sm">
+          <div class="col-sm pb-5 mx-md-5"> 
             <a href="recording.html" class="btn btn-lg btn-outline-light">
               <img class="card-img-top overlay" src="images/desk.jpg" alt="Muthers studio mixing desk">
               <div class="card-img-overlay">
@@ -118,8 +112,8 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm">
+        <div class="row pb-5 mx-md-5">
+          <div class="col-sm pb-5 mx-md-5">
             <a href="events.html" class="btn btn-lg btn-outline-light">
               <img class="card-img-top overlay" src="images/venue2.jpg" alt="Muthers Studio venue">
               <div class="card-img-overlay">
@@ -128,7 +122,7 @@
             </a>
           </div>
 
-          <div class="col-sm">
+          <div class="col-sm pb-5 mx-md-5">
             <a href="lockups.html" class="btn btn-lg btn-outline-light">
               <div class="overlay">
                 <img class="card-img-top" src="images/Lockup.jpg" alt="Muthers Studio Lockup">
@@ -142,8 +136,11 @@
       </div>  
     </main>
     
-    <!-- footer -->
-    <footer-component></footer-component>
+
+
+    <footer>
+      <footer-component></footer-component>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

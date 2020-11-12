@@ -12,9 +12,16 @@ class Footer extends HTMLElement {
           <div class="col">
             <p class="font-weight-bold oswald">Information</p>
             <ul class="list-unstyled">
-              <li><a href="rehearsal.html">Rehearsal</a></li>
+              <li><a href="lockups.html">Times & Prices</a></li>
+              <li>
+              <a href="rehearsal.html">Rehearsal</a>
+                <ul>
+                  <li><a href="rehearsal.html">Hourly rooms</a></li>
+                  <li><a href="rehearsal.html">Lock-Ups</a></li>
+                </ul>
+              </li>
+              
               <li><a href="recording.html">Recording</a></li>
-              <li><a href="lockups.html">Lock-Ups</a></li>
               <li><a href="venue.html">Venue</a></li>
             </ul>
           </div>
