@@ -33,11 +33,11 @@
     <header>
 
       <header-component></header-component>
-      <div class="container-fluid">
-        <h1 class="text-white oswald">Open Times & Prices</h1>
+      <div class="container-fluid bg-black">
+        <h1>Open Times & Prices</h1>
       </div>
         
-      <div class="container-fluid m-0 p-0">
+      <div class="container-fluid m-0 p-0 bg-black">
         <img class="img-fluid d-block w-100" src="images/reception.jpg">
       </div>
 
@@ -45,12 +45,11 @@
 
 
 
-    <main>
-        <div class="container pt-5 pb-5">
-            <div class="card card-body">
+    <main class="bg-white">
+        <div class="container pt-2 pb-5">
             <div class="row">
                 <div class="col">
-                    <div class="card card-body">
+                    <!-- <div class="card card-body"> -->
                         <h3><strong>Open Times:</strong></h3>
 
                         <table>
@@ -68,103 +67,104 @@
                             </tr>
                         </table>
 
-                    </div>
+                    <!-- </div> -->
                 </div>
                 <div class="col">
-                    <div class="card card-body">
-                        <h3><strong>Reherasal Room Prices Per Hour:</strong></h3>
+                    <!-- <div class="card card-body"> -->
+                        <h3><strong>Reherasal Rooms:</strong></h3>
+                        <p>Price per hour</p>
                         <table>
                             <tr class="boxed">
-                                <td><strong>Peak Times</strong></td>
+                                <td><p><strong>Peak Times</strong></p></td>
                                 <td>
                                     <table>
                                         <tr>
-                                            <td>Standard</td>
-                                            <td>£10</td>
+                                            <td><p>Standard</p></td>
+                                            <td><p>£10</p></td>
                                         </tr>
                                         <tr>
-                                            <td>Premium</td>
-                                            <td>£12-£15</td>
+                                            <td><p>Premium</p></td>
+                                            <td><p>£12-£15</p></td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                             <tr>
-                                <td><strong>Off Peak*</strong></td>
+                                <td><strong><p>Off Peak*</p></strong></td>
                                 <td>
                                     <table>
                                         <tr>
-                                            <td>Standard</td>
-                                            <td>£8</td>
+                                            <td><p>Standard</p></td>
+                                            <td><p>£8</p></td>
                                         </tr>
                                         <tr>
-                                            <td>Premium</td>
-                                            <td>£10-£15</td>
+                                            <td><p>Premium</p></td>
+                                            <td><p>£10-£15</p></td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                         </table>
-                        <em>*Mon-Fri, 12:00-18:00</em>
-                    </div>
+                        <em><p>*Mon-Fri, 12:00-18:00</p></em>
+                        <div class="accordion" id="accordionContact">
+                            <div class="card">
+                                <div class="card-header" id="bookingFormTitle">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#bookingForm" aria-expanded="true" aria-controls="bookingForm">
+                                            Book a reherasal
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
                 </div>
 
                 <div class="col">
-                    <div class="card card-body">
-                        <h3><strong>Recording Rates:</strong></h3>
+                    <!-- <div class="card card-body"> -->
+                        <h3><p><strong>Equipment Hire</strong></p></h3>
+                        <table>
+                            <tr class="boxed">
+                                <td>
+                                    <table>
+                                        <tr>
+                                        <td><p>Microphones</p></td>
+                                        </tr>
+                                        <tr>
+                                        <td><p>Cymbals</p></td>
+                                        </tr>
+                                        <tr>
+                                        <td><p>Keyboard</p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td><p><em>Free with room, collect from reception</em></p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Guitar</p></td>
+                                <td><p>£5 per session</p></td>
+                            </tr>
+                        </table>
                         
-                    </div>
+                    <!-- </div> -->
                 </div>
 
                 <div class="col">
-                    <div class="card card-body">
-                        <h3><strong>Equipment Hire</strong></h3>
-                        <table>
-                            <tr class="boxed">
-                                <td>
-                                    <table>
-                                        <tr>
-                                        <td>Microphones</td>
-                                        </tr>
-                                        <tr>
-                                        <td>Cymbals</td>
-                                        </tr>
-                                        <tr>
-                                        <td>Keyboard</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td><em>Free with room, just ask at reception</em></td>
-                            </tr>
-                            <tr>
-                                <td>Guitar</td>
-                                <td>£5 per session</td>
-                            </tr>
-                        </table>
-                    </div>
+                    <!-- <div class="card card-body"> -->
+                        <h3><strong>Recording Rates:</strong></h3>
+                    <!-- </div> -->
                 </div>
             </div>
 
             <div class="row">
                 <div class="col">
-                    <div class="accordion" id="accordionContact">
-                        <div class="card">
-                            <div class="card-header" id="bookingFormTitle">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#bookingForm" aria-expanded="true" aria-controls="bookingForm">
-                                    Book a reherasal
-                                    </button>
-                                </h2>
-                            </div>
-                        <div id="bookingForm" class="collapse" aria-labelledby="bookingFormTitle" data-parent="#accordionContact">
-                            <div class="card-body">
-                                <div class="typeform-widget" data-url="https://form.typeform.com/to/ek0rrQSI" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=ek0rrQSI&utm_source=typeform.com-01EJTVS5R8PTH65AZRX3QW3TPX-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
-                            </div>
+                    <div id="bookingForm" class="collapse" aria-labelledby="bookingFormTitle" data-parent="#accordionContact">
+                        <div class="card-body">
+                            <div class="typeform-widget" data-url="https://form.typeform.com/to/ek0rrQSI" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=ek0rrQSI&utm_source=typeform.com-01EJTVS5R8PTH65AZRX3QW3TPX-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 
