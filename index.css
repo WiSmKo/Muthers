@@ -9,6 +9,7 @@ body h1, h2, h3, h4, h5 {
     font-family: 'Oswald', sans-serif;
 }
 
+<<<<<<< HEAD
 /* adds a bit of padding to each page's title */
 .pageTitle{
     padding-bottom: 1%;
@@ -20,6 +21,12 @@ main{
 #home{
     background-color: inherit;
 }
+=======
+.pageTitle{
+    background-color: black;
+    padding-bottom: 1%;
+}
+>>>>>>> master
 
 body h1{
     color: white;
