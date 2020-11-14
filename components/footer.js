@@ -5,8 +5,8 @@ class Footer extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
-      <footer class="bg-dark text-white-50 pt-5">
-        <div class = "container-fluid">
+      <footer class="pt-5">
+        <div class = "container">
         <div class="row">
           
           <div class="col">
@@ -32,7 +32,7 @@ class Footer extends HTMLElement {
               <li><a href="contact.html">Contact Page</a></li>
               <li><a href="tel:0121 622 7110">0121 622 7110</a></li>
               <li>14 Rea Street South Digbeth Birmingham B5 6LB</li>
-              <li>Find us on <a href="https://goo.gl/maps/CSzHSv2C4reGtK1C9">Google Maps</a></li>
+              <li>Find us on <a target="_blank" href="https://goo.gl/maps/CSzHSv2C4reGtK1C9">Google Maps</a></li>
             </ul>
           </div>
 
@@ -54,13 +54,13 @@ class Footer extends HTMLElement {
           </div>
           <div class="col">
             <p class="font-weight-bold oswald">About Us</p>
-            <p>Creative hub in digbeth, Birmingham providing; music rehearsal spaces; recording, mixing, mastering; and live performance venue</p>
+            <p>Rehearsal and recording studio in Digbeth, Birmingham providing; hourly rooms and lock-ups; recording, mixing, mastering and a live performance venue.</p>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <p class="text-center m-0">Site built by <a href="#">William Smallman-Köpf</a></p>
-            <p class="text-center m-0">Photo & Video - <a href="https://www.thomasallanwagstaff.com/">Thomas Wagstaff</a></p>
+            <p class="text-center m-0">Site built by <a target="_blank" href="https://wismko.github.io/portfolio/">William Smallman-Köpf</a></p>
+            <p class="text-center m-0">Photo & Video - <a target="_blank" href="https://www.thomasallanwagstaff.com/">Thomas Wagstaff</a></p>
             <p class="text-center m-0">Copyright &#169; 2020. Muthers Ltd. All rights reserved</p>
           </div>
         </div>
@@ -70,9 +70,9 @@ class Footer extends HTMLElement {
           </div>
           <div class="col-1-sm">
             <p>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/"><i class="fab fa-youtube"></i></a>
+            <a target="_blank" href="https://www.facebook.com/MuthersStudio/"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/muthersstudio/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UC2tKGKhXzEAZC6ioLYBIpHw"><i class="fab fa-youtube"></i></a>
             </p>
           </div>
         </div>
