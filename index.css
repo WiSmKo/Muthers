@@ -9,18 +9,29 @@ body h1, h2, h3, h4, h5 {
     font-family: 'Oswald', sans-serif;
 }
 
+/* adds a bit of padding to each page's title */
 .pageTitle{
-    background-color: black;
     padding-bottom: 1%;
 }
 
-body h1{
+main{
+    background-color: white;
+}
+
+header{
+    background-color: black;
+}
+
+#homeMain{
+    background-color: rgb(3, 3, 3);
+}
+
+body h1, footer{
     color: white;
 }
 
 footer{
     background-color: rgb(63, 63, 63);
-    color: white;
 }
 
 /* disolve effect gradient on carousel images */
@@ -80,11 +91,13 @@ footer{
     header {
         position: relative;
         background-color: black;
-        height: 50vh;
-        min-height: 25rem;
         width: 100%;
         overflow: hidden;
       }
+
+    #homeHeader{
+        height: 50vh;
+    }
       
     header video {
         position: absolute;

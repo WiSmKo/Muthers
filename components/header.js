@@ -19,10 +19,10 @@ connectedCallback() {
                         <a class="nav-link" href="timesPrices.html">Open Hours & Prices</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="rehearsal.html">Rehearsal</a>
+                        <a class="nav-link" href="rehearsal.html">Rehearse</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="recording.html">Recording</a>
+                        <a class="nav-link" href="recording.html">Record</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="venue.html">Venue</a>
