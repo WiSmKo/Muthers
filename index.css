@@ -45,9 +45,7 @@ footer{
     border-bottom: 1px solid black;
   }
 
-
-
-/* fonts */
+/* fonts & styling*/
 
 .playfair-italic{
     font-family: 'Playfair Display', serif;
@@ -60,6 +58,10 @@ footer{
 
 .oswald{
     font-family: 'Oswald', sans-serif;
+}
+
+.subText{
+    font-size: 0.75rem;
 }
 
 
