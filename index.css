@@ -14,16 +14,14 @@ body h1, h2, h3, h4, h5 {
     padding-bottom: 1%;
 }
 
-main{
-    background-color: white;
-}
-
 header{
     background-color: black;
 }
 
-#homeMain{
+/* adjusts page's theme to a dark one */
+.darkMain{
     background-color: rgb(3, 3, 3);
+    color: white;
 }
 
 body h1, footer{
@@ -32,6 +30,13 @@ body h1, footer{
 
 footer{
     background-color: rgb(63, 63, 63);
+}
+
+/*REDUNDANT MARKED FOR DELETION */
+.maskImage{
+    position: absolute;
+    width: 100%;
+    z-index: 9;
 }
 
 /* disolve effect gradient on carousel images */
@@ -60,13 +65,13 @@ footer{
     font-family: 'Oswald', sans-serif;
 }
 
+/* A smaller font size for extra information that isn't the key point, particularly in price table */
 .subText{
     font-size: 0.75rem;
 }
 
 
 /* styling of the four buttons in the middle of the home page */
-
 
 #bigButtons p{
     font-size: 10vw;
@@ -86,6 +91,11 @@ footer{
     color: rgb(255, 255, 255);
 }
 
+/* styling of past client company logos on recording page */
+#past-clients img{
+    width: 100px;
+}
+
 
 /* desktop and tablet styling */
 @media (min-width: 576px){
@@ -95,10 +105,18 @@ footer{
         background-color: black;
         width: 100%;
         overflow: hidden;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
-    #homeHeader{
-        height: 50vh;
+    #contactHeader{
+        height: 60px;
+    }
+
+    header img{
+        margin: auto;
     }
       
     header video {

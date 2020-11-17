@@ -52,7 +52,7 @@ class Footer extends HTMLElement {
               <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">&#128269;</button>
             </form>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <p class="font-weight-bold oswald">About Us</p>
             <p>Rehearsal and recording studio in Digbeth, Birmingham providing; hourly rooms and lock-ups; recording, mixing, mastering and a live performance venue.</p>
           </div>
