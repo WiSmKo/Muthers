@@ -91,9 +91,41 @@ footer{
     color: rgb(255, 255, 255);
 }
 
-/* styling of past client company logos on recording page */
+/* Recording page custom styling */
+/* styling of past client company logos */
 #past-clients img{
     width: 100px;
+}
+
+
+/* price cards */
+.priceCard{
+    border-color: white;
+    border: solid;
+    border-width: 1px;
+}
+
+.bigPrice{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.bigTitle{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+#ABDeal{
+    padding-top: 5%;
+    background-image: url(images/desk2.jpg);
+    height: 60vh;
+}
+
+#videoDeal{
+    padding-top: 5%;
+    background-image: url(images/screen.jpg);
+    height: 60vh;
 }
 
 
