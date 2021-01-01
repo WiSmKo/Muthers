@@ -229,6 +229,10 @@ footer{
         transform: translateX(-50%) translateY(-50%);
     }
 
+    .centered{
+        padding-left: 50%;
+    }
+
     /* adjust the font size of home screen buttons to improve responsiveness */
     #bigButtons p{
         font-size: 5vw;
