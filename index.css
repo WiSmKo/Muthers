@@ -7,7 +7,7 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
-body h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -47,15 +47,9 @@ body h1, footer{
 }
 
 footer{
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(0, 0, 0);
 }
 
-/*REDUNDANT MARKED FOR DELETION */
-.maskImage{
-    position: absolute;
-    width: 100%;
-    z-index: 9;
-}
 
 /* Sets the font colour for the about us section */
 #bio{
@@ -95,26 +89,49 @@ footer{
     font-size: 0.75rem;
 }
 
-
-/* styling of the four buttons in the middle of the home page */
-
-#bigButtons p{
-    font-size: 10vw;
-    text-align: center;
-}
-
-#bigButtons img{
-    filter: brightness(50%);
+.homeNav{
+    /* height: 80vh; */
+    width: 100%;
     margin: 0;
+    background-color: white;
+    position: relative;
 }
 
-#bigButtons a{
-    color: rgb(216, 216, 216);
+.polygon{
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-#bigButtons a:hover{
-    color: rgb(255, 255, 255);
+.polygon svg{
+    width: 100%;
+    height: 100%;
 }
+
+#black{
+    fill:#000000;
+}
+
+#gray{
+    fill: #C4C4C4;
+}
+
+/* Home page nav grid */
+.homeNavItem{
+    height: 40vh;
+    /* color: #3F3F3F; */
+    background-color: transparent;
+    border: 1px solid #3b3b3b;
+    text-shadow: 1px 1px 2px #141414;
+}
+
+.homeNavItem h3{
+    font-size: 5rem;
+}
+
 
 /* Recording page custom styling */
 /* styling of past client company logos */
@@ -168,12 +185,6 @@ footer{
         align-items: center;
       }
 
-    .home-banner-top-centre{
-        position: absolute;
-        top: 50%;
-        left: 46.5%;
-        z-index: 100;
-    };
 
     #contactHeader{
         height: 60px;
@@ -202,10 +213,6 @@ footer{
         padding-left: 50%;
     }
 
-    /* adjust the font size of home screen buttons to improve responsiveness */
-    #bigButtons p{
-        font-size: 5vw;
-    }
 
     /* adjust alignment of link list depending on screen size */
     #footerLinks{
