@@ -18,20 +18,6 @@ h1, h2, h3, h4, h5 {
     z-index: 200;
 }
 
-/* Styling for the home page banner containers that allow the 'book now' button to go over the top of the video or photos*/
-#home-fullscreen-banner {
-    position:relative;
-    display:inline-block;
-    text-align:center;
-}
-
-.home-banner-top-centre{
-    position: absolute;
-    top: 32.5%;
-    left: 40%;
-    z-index: 100;
-};
-
 header{
     background-color: black;
 }
@@ -49,7 +35,6 @@ body h1, footer{
 footer{
     background-color: rgb(0, 0, 0);
 }
-
 
 /* Sets the font colour for the about us section */
 #bio{
@@ -89,8 +74,8 @@ footer{
     font-size: 0.75rem;
 }
 
+
 .homeNav{
-    /* height: 80vh; */
     width: 100%;
     margin: 0;
     background-color: white;
@@ -125,24 +110,41 @@ footer{
     width: 100%;
     background-color: transparent;
     border: 1px solid #3b3b3b;
-    text-shadow: 1px 1px 2px #141414;
+    position: relative;
+}
+
+.homeNavItem a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
 }
 
 .homeNavItem h3{
     font-size: 5rem;
+    text-shadow: 1px 1px 2px #141414;
 }
+
 
 .homeNav a{
     text-decoration: none;
     color: white;
 }
 
-.hidden{
-    display: none;
+.homeNavItem:hover{
+    background-color: rgba(255, 255, 255, 0.774);
+    color: black;
 }
 
-.homeNav a:hover{
-    color: #000000;
+.homeNavItem:hover p{
+    display: inline;
+  
 }
 /* Recording page custom styling */
 /* styling of past client company logos */
