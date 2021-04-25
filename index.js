@@ -1,11 +1,21 @@
-const homeNavPanel = document.getElementById('rehearse');
+const rehearsePanel = document.getElementById('rehearse');
+const recordPanel = document.getElementById('record');
+const venuePanel = document.getElementById('venue');
+const contactPanel = document.getElementById('contact');
 
-homeNavPanel.addEventListener("mouseenter", function(event){
-    event.target.style.backgroundColor = "rgba(255,255,255,0.7)";
-    event.target.style.color="rgb(0,0,0)";
-});
+function changeNavPanelStyle(panelID){
+    panelID.addEventListener("mouseenter", function(event){
+        event.currentTarget.style.backgroundColor = "rgba(255,255,255,0.7)";
+        event.target.querySelector('p').classList.remove("hidden");
+    });
 
-homeNavPanel.addEventListener("mouseout", function(event){
-    event.target.style.backgroundColor = "rgba(255,255,255,0.0)";
-    event.target.style.color="rgb(255,255,255)";
-});
+    panelID.addEventListener("mouseout", function(event){
+        event.currentTarget.style.backgroundColor = "rgba(255,255,255,0.0)";
+        event.target.querySelector('p').classList.add("hidden");
+    });
+}
+
+changeNavPanelStyle(rehearsePanel);
+changeNavPanelStyle(recordPanel);
+changeNavPanelStyle(venuePanel);
+changeNavPanelStyle(contactPanel);

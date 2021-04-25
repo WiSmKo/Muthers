@@ -122,7 +122,7 @@ footer{
 /* Home page nav grid */
 .homeNavItem{
     height: 40vh;
-    /* color: #3F3F3F; */
+    width: 100%;
     background-color: transparent;
     border: 1px solid #3b3b3b;
     text-shadow: 1px 1px 2px #141414;
@@ -132,7 +132,18 @@ footer{
     font-size: 5rem;
 }
 
+.homeNav a{
+    text-decoration: none;
+    color: white;
+}
 
+.hidden{
+    display: none;
+}
+
+.homeNav a:hover{
+    color: #000000;
+}
 /* Recording page custom styling */
 /* styling of past client company logos */
 #past-clients img{
@@ -217,6 +228,10 @@ footer{
     /* adjust alignment of link list depending on screen size */
     #footerLinks{
         text-align: left;
+    }
+
+    .homeNavItem{
+        width: 49vw;
     }
 
 }
