@@ -37,24 +37,18 @@ class Footer extends HTMLElement {
           </div>
 
           <div class="col-sm">
-            <p class="font-weight-bold oswald">Keep Posted</p>
-            Sign up to our monthly news letter to stay informed on our latest news and events:
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="email" placeholder="Email address" aria-label="Email">
-              <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Sign Up</button>
-            </form>
+            <p class="font-weight-bold oswald">About Us</p>
+            <p>Rehearsal and recording studio in Digbeth, Birmingham providing; hourly rooms and lock-ups; recording, mixing, mastering and a live performance venue.</p>
           </div>
+
         </div>
+
         <div class="row">
           <div class="col-8">
             <form class="form-inline">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">&#128269;</button>
             </form>
-          </div>
-          <div class="col-sm">
-            <p class="font-weight-bold oswald">About Us</p>
-            <p>Rehearsal and recording studio in Digbeth, Birmingham providing; hourly rooms and lock-ups; recording, mixing, mastering and a live performance venue.</p>
           </div>
         </div>
         <div class="row">
