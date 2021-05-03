@@ -60,7 +60,7 @@ class Footer extends HTMLElement {
         </div>
         <div class="row">
           <div class="col-sm text-center" id="footerLinks">
-            <p><a href="contact.html">Contact us</a> - <a href="#">Privacy Policy</a> - <a href="#">Terms of Use</a> - <a href="#">Sitemap</a></p>
+            <p><a href="contact.html">Contact us</a> - <a href="#">Privacy Policy</a> - <a href="#">Terms of Use</a> - <a href="/sitemap">Sitemap</a></p>
           </div>
           <div class="col-1-sm">
             <p>
